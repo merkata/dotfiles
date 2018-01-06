@@ -91,4 +91,9 @@ source /usr/share/fzf/key-bindings.zsh
 alias workproxy_on="export http_proxy='172.18.2.234:8080';export https_proxy='172.18.2.234:8080'"
 alias workproxy_off="unset http_proxy;unset https_proxy"
 
+#exercism completions
+if [ -f ~/.config/exercism/exercism_completion.zsh ]; then
+  . ~/.config/exercism/exercism_completion.zsh
+fi
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
